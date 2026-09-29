@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+/*I made the font Zen Kurenaido because it is simple, just like me*/
+body {
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 16;
+  border-color: black;
+  border-width: 20px;
+  border-style: solid;
+  border-radius: 50px;
+  text-align: center;
+  color: #333;
+  /*Code for gradient*/
+  background-size: 500%;
+  background-image: var(--gradient);
+  animation: bg-animation 15s infinite;
+  /*   name of varible^   ^legnth   ^loop amount */
+}
+/*I added a border to the images to make it stand out from the rest of the web page*/
+img {
+  border-color: black;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 25px;
+}
+/*I made the hr shorter so that it is not as bold*/
+hr {
+  height: 5px;
+  background-color: black;
+  border: none;
+  width: 400px;
+}
+
+ol {
+  width: 10%;
+  margin: auto;
+}
+ul {
+  text-align: center;
+  list-style: inside;
+}
+#intro {
+  font-size: 25px;
+}
+h1 {
+  font-size: 80px;
+}
+h3 {
+  font-size: 28px;
+}
+p {
+  font-size: 24px;
+  margin: 50px 50px 50px 50px;
+}
+#quote {
+  font-size: 37px;
+}
+.codingprogression {
+  font-size: 20;
+}
+#copyright {
+  font-size: 10px;
+}
+
+/*--------------------------- Independently learned CSS ---------------------------*/
+
+/*Adapted from Kevin Powell's Gradient Fun https://codepen.io/kevinpowell/pen/EqQyRQ*/
+/*the root element defines the varible - in this case it used for defining the graident*/
+:root {
+  --gradient: linear-gradient(
+    90deg,
+    #ee964b,
+    #ea9626,
+    #e59500,
+    #eaae22,
+    #f1ab41,
+    #f48f3e,
+    #f95738,
+    #f46d46,
+    #ef8354
+  );
+  /*Tells the graidnt what colors to include*/
+}
+/*At 0% of the time the backround is all the way to the left, at half of the time it is all the way on the right, and at the end of the animation it is back on the left, to make a perfect loop*/
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+/*tells the backround to move left then right then left again*/

@@ -1,0 +1,1212 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <!-- Code in code block code can't be indented because it shows the indentation in the code block -->
+
+  <head>
+    <!-- Meta tags for information about the page -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lucy Kaiser" />
+    <meta name="description" content="Lucy Kaiser's 11th Grade Portfolio" />
+    <title>Coding Progression</title>
+
+    <!-- Link Favicon to this page -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+
+    <!-- Link the coding progression, global, and navigation CSS files to this file -->
+    <link rel="stylesheet" href="/css/codingprogression.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
+
+    <!-- CDN links to GSAP (animation library) core and ScrollTrigger plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Link this page's Javascript file to this file, as well as the global JS file -->
+    <script type="text/javascript" src="js/codingprogression.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+
+    <!-- CDN link for lenis smooth scrolling JS library -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.40/dist/lenis.min.js"></script>
+
+    <!-- CDN links for Stevie Sans, Scale Variable, and Stretch Pro fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/fmf0nsi.css" />
+
+    <!-- CDN links to highlightJS, a library for making code blocks, and a theme for the code blocks -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css"
+    />
+  </head>
+  <body class="animate-all">
+    <div class="coding-table-header-wrapper">
+      <nav>
+        <div class="logo-wrapper">
+          <a class="logo" href="/index.html">Lucy Kaiser</a>
+        </div>
+        <ul class="nav-ul">
+          <li><a href="/index.html">Home</a></li>
+          <li>
+            <a class="dropdown-arrow" href="/plb_landing.html">Projects</a>
+            <ul class="sub-menus">
+              <li><a href="/6portfolio/index.html">6th Grade</a></li>
+              <li><a href="/7portfolio/index.html">7th Grade</a></li>
+              <li><a href="/projects8th.html">8th Grade</a></li>
+              <li><a href="/projects9th.html">9th Grade</a></li>
+              <li><a href="/projects10th.html">10th Grade</a></li>
+              <li><a href="/projects11th.html">11th Grade</a></li>
+              <li><a href="/projects12th.html">12th Grade</a></li>
+            </ul>
+          </li>
+          <li><a href="/experiences.html">Experiences</a></li>
+          <li>
+            <a class="dropdown-arrow" href="/wbl_landing.html">
+              Work Based Learning
+            </a>
+                        <ul class="sub-menus">
+              <li><a href="/wbl9th.html">9th Grade</a></li>
+              <li><a href="/wbl10th.html">10th Grade</a></li>
+              <li><a href="/wbl11th.html">11th Grade</a></li>
+              <li><a href="/wbl12th.html">12th Grade</a></li>
+            </ul>
+          </li>
+          <li><a href="/5qualities.html">Five Qualities</a></li>
+          <li class="current-page">
+            <a href="/codingprogression.html">Coding Progression</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="page-header">Coding Progression</p>
+      <div class="table-wrapper">
+        <table
+          summary="A list of most of the coding elements I have learned in 6th, 7th and 8th grade"
+        >
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Language</th>
+              <th>Grade learned</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>html</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Where all of the HTML is written</td>
+            </tr>
+            <tr>
+              <td>body</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Where all of the visible HTML is written</td>
+            </tr>
+            <tr>
+              <td>meta</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Where all of the metadata for the website is displayed</td>
+            </tr>
+            <tr>
+              <td>head</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Where all of the non-displayed HTML is written</td>
+            </tr>
+            <tr>
+              <td>link</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Used to link CSS files and favicons</td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>
+                Used to change the name of the webpage as displayed by the
+                browser
+              </td>
+            </tr>
+            <tr>
+              <td>footer</td>
+              <td>HTML</td>
+              <td>7</td>
+              <td>Where code for a footer is written</td>
+            </tr>
+            <tr>
+              <td>h1-6</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>
+                Displays bolded text in varying sizes. H1 is the biggest and h6
+                is the smallest
+              </td>
+            </tr>
+            <tr>
+              <td>nav</td>
+              <td>HTML</td>
+              <td>7</td>
+              <td>
+                Where code for nav bars are written. Applies the "display:
+                inline-flex" property to all child elements
+              </td>
+            </tr>
+            <tr>
+              <td>div</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>
+                Divides the elements into different sections to be able to apply
+                different styling
+              </td>
+            </tr>
+            <tr>
+              <td>ol</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Displays a list with numbers</td>
+            </tr>
+            <tr>
+              <td>ul</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Displays a list with bullet points</td>
+            </tr>
+            <tr>
+              <td>li</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>A list item for use in the ol and ul elements</td>
+            </tr>
+            <tr>
+              <td>p</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Displays text</td>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>HTML</td>
+              <td>7</td>
+              <td>
+                Used for linking to different websites or different locations on
+                the current website
+              </td>
+            </tr>
+            <tr>
+              <td>strong</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Bolds text</td>
+            </tr>
+            <tr>
+              <td>img</td>
+              <td>HTML</td>
+              <td>6</td>
+              <td>Displays an image</td>
+            </tr>
+            <tr>
+              <td>script</td>
+              <td>HTML</td>
+              <td>7</td>
+              <td>
+                Used to import data. Usually in the form of JavaScript or JSON
+              </td>
+            </tr>
+            <tr>
+              <td>caption</td>
+              <td>HTML</td>
+              <td>7</td>
+              <td>The title of a table</td>
+            </tr>
+            <tr>
+              <td>table</td>
+              <td>HTML</td>
+              <td>7</td>
+              <td>Where all table HTML code is written</td>
+            </tr>
+            <tr>
+              <td>td</td>
+              <td>HTML</td>
+              <td>7</td>
+              <td>The data for the cell</td>
+            </tr>
+            <tr>
+              <td>th</td>
+              <td>HTML</td>
+              <td>7</td>
+              <td>Specifies the cell as a header cell</td>
+            </tr>
+            <tr>
+              <td>tr</td>
+              <td>HTML</td>
+              <td>7</td>
+              <td>A row of cells</td>
+            </tr>
+            <tr>
+              <td>:root</td>
+              <td>CSS</td>
+              <td>7</td>
+              <td>Where all of the variables are defined</td>
+            </tr>
+            <tr>
+              <td>scroll-behavior: smooth</td>
+              <td>CSS</td>
+              <td>7</td>
+              <td>
+                Plays an animation of scrolling instead of immediately jumping
+                to it
+              </td>
+            </tr>
+            <tr>
+              <td>text-decoration: none</td>
+              <td>CSS</td>
+              <td>7</td>
+              <td>Makes links have no underline</td>
+            </tr>
+            <tr>
+              <td>var()</td>
+              <td>CSS</td>
+              <td>7</td>
+              <td>For using variables defined in the :root element</td>
+            </tr>
+            <tr>
+              <td>vh and vw (units)</td>
+              <td>CSS</td>
+              <td>7</td>
+              <td>
+                Stands for viewport height and viewport width. Each unit is 1%
+                of the viewport
+              </td>
+            </tr>
+            <tr>
+              <td>line-height</td>
+              <td>CSS</td>
+              <td>7</td>
+              <td>The height for one line of text</td>
+            </tr>
+            <tr>
+              <td>cursor</td>
+              <td>CSS</td>
+              <td>7</td>
+              <td>Sets the state of the cursor</td>
+            </tr>
+            <tr>
+              <td>display: flex</td>
+              <td>CSS</td>
+              <td>8</td>
+              <td>
+                Sets the display to flex which can be used to position elements
+              </td>
+            </tr>
+            <tr>
+              <td>align-items</td>
+              <td>CSS</td>
+              <td>8</td>
+              <td>
+                Controls how the elements are aligned on the horizontal axis
+              </td>
+            </tr>
+            <tr>
+              <td>justify-content</td>
+              <td>CSS</td>
+              <td>8</td>
+              <td>
+                Controls how the elements are aligned on the vertical axis
+              </td>
+            </tr>
+            <tr>
+              <td>SASS (language)</td>
+              <td>SASS</td>
+              <td>8</td>
+              <td>
+                A CSS preprocessor that removes the squiggly brackets and
+                semicolons when writing code
+              </td>
+            </tr>
+            <tr>
+              <td>Main</td>
+              <td>HTML</td>
+              <td>8</td>
+              <td>
+                Where the main content of your webpage goes, helpful for screen
+                readers
+              </td>
+            </tr>
+            <tr>
+              <td>@media</td>
+              <td>CSS</td>
+              <td>9</td>
+              <td id="media-description">A media query allows you to apply styles based on properties of the browser, like screen width and preferring reduced motion</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  <div class="coding-progression-bulletpoints-wrapper-wrapper">
+    <div class="coding-progression-bulletpoints-wrapper">
+      <ul class="codingProgressionBulletpoints">
+        <li>
+            <p class="item-name">HTML</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Where all of the HTML is written</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">body</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Where all of the visible HTML is written</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">meta</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Where all of the metadata for the website is displayed</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">head</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Where all of the non-displayed HTML is written</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">link</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Used to link CSS files and favicons</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">title</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Used to change the name of the webpage as displayed by the browser</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">footer</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 7th grade</li>
+                <li>Where code for a footer is written</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">h1-6</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Displays bolded text in varying sizes. H1 is the biggest and h6 is the smallest</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">nav</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 7th grade</li>
+                <li>Where code for nav bars are written. Applies the "display: inline-flex" property to all child elements</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">div</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Divides the elements into different sections to be able to apply different styling</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">ol</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Displays a list with numbers</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">ul</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Displays a list with bullet points</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">li</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>A list item for use in the ol and ul elements</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">p</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Displays text</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">a</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 7th grade</li>
+                <li>Used for linking to different websites or different locations on the current website</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">strong</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Bolds text</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">img</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 6th grade</li>
+                <li>Displays an image</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">script</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 7th grade</li>
+                <li>Used to import data. Usually in the form of JavaScript or JSON</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">caption</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 7th grade</li>
+                <li>The title of a table</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">table</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 7th grade</li>
+                <li>Where all table HTML code is written</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">td</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 7th grade</li>
+                <li>The data for the cell</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">th</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 7th grade</li>
+                <li>Specifies the cell as a header cell</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">tr</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 7th grade</li>
+                <li>A row of cells</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">:root</p>
+            <ul class="item-details">
+                <li>Type: N/A</li>
+                <li>From CSS</li>
+                <li>Learned in 7th grade</li>
+                <li>Where all of the variables are defined</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">scroll-behavior: smooth</p>
+            <ul class="item-details">
+                <li>Type: property and value</li>
+                <li>From CSS</li>
+                <li>Learned in 7th grade</li>
+                <li>Plays an animation of scrolling instead of immediately jumping to it</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">text-decoration: none</p>
+            <ul class="item-details">
+                <li>Type: property and value</li>
+                <li>From CSS</li>
+                <li>Learned in 7th grade</li>
+                <li>Makes links have no underline</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">var()</p>
+            <ul class="item-details">
+                <li>Type: function</li>
+                <li>From CSS</li>
+                <li>Learned in 7th grade</li>
+                <li>For using variables defined in the :root element</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">vh and vw (units)</p>
+            <ul class="item-details">
+                <li>Type: units</li>
+                <li>From CSS</li>
+                <li>Learned in 7th grade</li>
+                <li>Stands for viewport height and viewport width. Each unit is 1% of the viewport</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">line-height</p>
+            <ul class="item-details">
+                <li>Type: property</li>
+                <li>From CSS</li>
+                <li>Learned in 7th grade</li>
+                <li>The height for one line of text</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">cursor</p>
+            <ul class="item-details">
+                <li>Type: property</li>
+                <li>From CSS</li>
+                <li>Learned in 7th grade</li>
+                <li>Sets the state of the cursor</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">display: flex</p>
+            <ul class="item-details">
+                <li>Type: property and value</li>
+                <li>From CSS</li>
+                <li>Learned in 8th grade</li>
+                <li>Sets the display to flex which can be used to position elements</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">align-items</p>
+            <ul class="item-details">
+                <li>Type: property</li>
+                <li>From CSS</li>
+                <li>Learned in 8th grade</li>
+                <li>Controls how the elements are aligned on the horizontal axis</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">justify-content</p>
+            <ul class="item-details">
+                <li>Type: property</li>
+                <li>From CSS</li>
+                <li>Learned in 8th grade</li>
+                <li>Controls how the elements are aligned on the vertical axis</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">SASS (language)</p>
+            <ul class="item-details">
+                <li>Type: language</li>
+                <li>From SASS</li>
+                <li>Learned in 8th grade</li>
+                <li>A CSS preprocessor that removes the squiggly brackets and semicolons when writing code</li>
+            </ul>
+        </li>
+        <li>
+            <p class="item-name">Main</p>
+            <ul class="item-details">
+                <li>Type: element</li>
+                <li>From HTML</li>
+                <li>Learned in 8th grade</li>
+                <li>Where the main content of your webpage goes, helpful for screen readers</li>
+            </ul>
+          </li>
+        <li>
+            <p class="item-name">@media</p>
+            <ul class="item-details">
+                <li>Type: rule</li>
+                <li>From CSS</li>
+                <li>Learned in 9th grade</li>
+                <li>A media query allows you to apply styles based on properties of the browser, like screen width and preferring reduced motion</li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+  </div>
+      </div>
+    </div>
+    <div class="gsap-info-wrapper">
+      <div class="header-wrapper">
+        <p class="gsap-big-header">GSAP And JavaScript</p>
+        <p class="gsap-subheader-header">By Lucy Kaiser · April 2024</p>
+      </div>
+
+      <div class="whats-gsap-wrapper">
+        <h1>What is GSAP?</h1>
+        <p>
+          GSAP (GreenSock Animation Platform) is a powerful and versatile
+          JavaScript animation library that allows developers to create
+          high-performance animations and interactions for web and mobile
+          applications. GSAP provides a wide range of features, including
+          timelines, easing, and plugin support, making it easy to create
+          complex animations with minimal code.
+        </p>
+      </div>
+
+      <h1 class="why-gsap-main-header">Why I Chose GSAP</h1>
+
+      <div class="why-gsap-boxes-wrapper">
+        <div class="why-gsap-box">
+          <h1 class="why-gsap-header">Familiarity</h1>
+          <p class="why-gsap-text">
+            Since I used GSAP in my portfolio last year, I was already similar
+            with the syntax and how it works. This allowed me to learn how to
+            make better and more complex animations.
+          </p>
+        </div>
+
+        <div class="why-gsap-box">
+          <h1 class="why-gsap-header">Flexibility</h1>
+          <p class="why-gsap-text">
+            GSAP is an extremely versatile animation library which can be used
+            to create anything you can dream of, as long as you actually have
+            the skill to code it.
+          </p>
+        </div>
+
+        <div class="why-gsap-box">
+          <h1 class="why-gsap-header">Simplicity</h1>
+          <p class="why-gsap-text">
+            GSAP has a simple and readable syntax, which makes developing
+            animations faster and easier. It also made it easier to re-learn, as
+            I’d forgotten a lot since 7th grade.
+          </p>
+        </div>
+      </div>
+
+      <div class="line-divider"></div>
+
+      <h1>Fundamentals</h1>
+      <h2>JavaScript Syntax Basics</h2>
+      <p class="paragraph-before-subheader">
+        Similar to HTML and CSS, JavaScript does not <em>technically</em> need
+        indentation, it is much preferred as it makes reading and editing code
+        easier. However, unlike HTML and CSS, JavaScript has a very particular
+        way that you have to name things. When writing GSAP code all
+        combinations of 2 or more words must use camel case. Camel case is where
+        you capitalize the first letter of every word, except the first word.
+        For example: camelCase, fromTo, scrollTrigger, etc. Finally, comments in
+        JavaScript are started with two forward slashes.
+      </p>
+
+      <h2>Plugins</h2>
+      <p class="paragraph-before-header">
+        GSAP functions with a thing called plugins. Plugins are pieces of
+        JavaScript code written by the team at GreenStock that can add
+        functionality to the base code. The base code (called the “core”)
+        handles animations using from, to, and fromTo, as well as some utilities
+        like random numbers and color manipulation. All of the plugins I used
+        for my portfolio are free for anyone to use, however some plugins made
+        by GreenStock cost money. Some of GreenStock’s free plugins include
+        Flip, a plugin to animate elements between states, Draggable, which
+        allows you to make drabble elements of your webpage, and ScrollTrigger,
+        a plugin for scroll-based animations for your website. I will only be
+        going over Core and ScrollTrigger in this overview. GreenStock’s paid
+        plugin packages start at $99 a year for an additional 8 plugins on top
+        of the free ones and $149 a year for 6 other additional plugins.
+      </p>
+
+      <div class="line-divider"></div>
+
+      <h1>Setup</h1>
+      <h2>Getting CDN Links</h2>
+      <p>
+        The first step of setting up your project to use GSAP is to get the CDN
+        links to the GSAP plugins you want to use. CDN stands for Content
+        Delivery Network and is how the code that was written by GreenStock is
+        delivered to your website.
+      </p>
+      <p>
+        <span class="bold">
+          To get the CDN links for the plugins you would like to use, go to
+          <a href="https://gsap.com/docs/v3/Installation" target="_bank">
+            https://gsap.com/docs/v3/Installation,
+          </a>
+          scroll down, and click the ‘CDN’ tab.
+        </span>
+        Select any plugins you wish to use. If you would like to recreate the
+        animations in the examples in the advanced animations section, select
+        ‘ScrollTrigger’.
+        <span class="bold">
+          Then, copy the script tags and paste them into your HTML file’s head.
+        </span>
+        Below is an example of what your HTML’s head should look like.
+      </p>
+
+      <pre> <!-- The code can't be indented or it displays in the code block -->
+        <code class="language-xml">&lt;head&gt;
+&lt;!--  Don’t worry if the link doesn’t exactly match this one. 
+GSAP is consistently getting updates so the version number will likely be different --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"&gt;&lt;/script&gt;
+&lt;!-- Other meta tags and the page title can go here. If you want to use ScrollTrigger you can put that here too --&gt;
+&lt;/head&gt;
+</code> <!-- Can't be indented or it shows an extra line at the end --> 
+</pre>
+
+      <h2>Linking JavaScript to HTML</h2>
+      <p class="paragraph-before-code">
+        The second step of setting up your project to use GSAP is to link your
+        JavaScript file to your HTML file. To do this, simply
+        <span class="bold"
+          >create a JavaScript file in the root directory of your project. Then
+          add a script tag to your header, and set the source to the file path
+          to the JavaScript file.
+        </span>
+      </p>
+
+      <pre><code class="language-xml">&lt;!-- Replace the [FILEPATH TO JS FILE] with the actual path to your JavaScript file --&gt;
+&lt;script src=”[FILEPATH TO JS FILE]"&gt;&lt;/script&gt;
+</code></pre>
+
+      <p class="bold">Next, in your JavaScript file, add the following code.</p>
+
+      <pre><code class="language-js">// Wait until the HTML is loaded to execute code
+document.addEventListener("DOMContentLoaded", (event) =&gt; {
+// Put code here
+});
+</code></pre>
+
+      <p>
+        This code makes the JavaScript wait to execute until the HTML file tells
+        it that it is fully loaded. Without this, GSAP may say that the element
+        you are selecting is not found. When you are coding, make sure to put
+        all of your animation code within this code.
+      </p>
+
+      <h2>Register plugins</h2>
+      <p class="paragraph-before-code">
+        The next step before starting to code your animations is to register the
+        plugins you chose. You only have to register additional plugins, which
+        mean you do not have to register the Core plugin.
+        <span class="bold"
+          >If you are using it, you can register the ScrollTrigger plugin with
+          the code below.</span
+        >
+      </p>
+
+      <pre><code class="language-js">// Make sure to put this inside the event listener!
+gsap.registerPlugin(ScrollTrigger)
+</code></pre>
+
+      <h2 class="subheader-after-code">
+        Prefers Reduced Motion Accommodations
+      </h2>
+      <p class="paragraph-before-code">
+        As Uncle Ben once said, “With great power comes great responsibility”.
+        When learning to animate, you must keep in mind that some people have
+        conditions that make them sensitive to excessive motion on websites. To
+        accommodate for these people, we can add JavaScript code to check if a
+        user has a setting called “Prefers Reduced Motion” set to reduced. If it
+        is set to reduced, then we forgo the animations.
+        <span class="bold">
+          If you are following along, you can copy and paste this code inside
+          the event listener.
+        </span>
+        It is fine if the register plugin code is outside of this code, as it
+        does not actually animate anything.
+      </p>
+
+      <pre><code class="language-js">const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true; 
+  // If the user has prefers-reduced-motion set to reduced, this code will set the variable ‘isReduced’ to true
+  // This will make it so the animation code will only run if the user does not have prefers-reduced-motion set to reduce.
+  // This code is from this website: https://natclark.com/tutorials/javascript-reduced-motion/
+  if (isReduced === false) { 
+  // Put animation code here
+  }</code></pre>
+
+      <p class="paragraph-before-code">
+        If you are following along to setup your project to use GSAP, then stop
+        to make sure your JavaScript looks like the one below.
+      </p>
+
+      <pre><code>// Wait until the HTML is loaded to execute code
+document.addEventListener("DOMContentLoaded", (event) => {
+    // Only necessary if you are using ScrollTrigger in your project
+    gsap.registerPlugin(ScrollTrigger)
+    
+    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true; 
+    // If the user has prefers-reduced-motion set to reduced, this code will set the variable ‘isRecuded’ to true
+    // This will make it so the animation code will only run if the user does not have prefers-reduced-motion set to reduce.
+    // This code is from this website: https://natclark.com/tutorials/javascript-reduced-motion/
+    if (isReduced === false) { 
+    // Put animation code here
+    }
+});</code></pre>
+
+      <h1>Basic Animation</h1>
+      <h2>GSAP Syntax Basics</h2>
+      <p>
+        The basic syntax of using GSAP is simple and easy to understand. In this
+        section, we will cover the basic syntax of using GSAP to create
+        animations.
+      </p>
+      <p>The basic syntax of using GSAP is as follows:</p>
+
+      <pre><code class="language-plaintext">gsap.method(target, vars, options)</code></pre>
+
+      <p>
+        The method parameter specifies the type of animation you want to create.
+        The most commonly used methods are to(), from(), and fromTo(). The
+        target parameter specifies the element you want to animate. The vars
+        parameter specifies the animation properties you want to apply. The
+        options parameter is optional and allows you to specify additional
+        options for the animation.
+      </p>
+
+      <p class="paragraph-before-code">
+        Here is an example of using the to() method to animate an element:
+      </p>
+
+      <pre><code class="language-js">gsap.to("#myElement", {
+  duration: 1, 
+  x: 100, 
+  y: 100
+})</code></pre>
+
+      <p>
+        In this example, the to() method is used to animate the element with the
+        ID "myElement". The animation properties are specified in the vars
+        parameter. The duration property specifies the duration of the animation
+        in seconds. The x and y properties specify the final position of the
+        element.
+      </p>
+
+      <p class="paragraph-before-code">
+        Here is an example of using the from() method to animate an element:
+      </p>
+
+      <pre><code class="language-js">gsap.from("#myElement", {
+  duration: 1, 
+  x: -100, 
+  y: -100
+});</code></pre>
+
+      <p>
+        In this example, the from() method is used to animate the element with
+        the ID "myElement". The animation properties are specified in the vars
+        parameter. The duration property specifies the duration of the animation
+        in seconds. The x and y properties specify the starting position of the
+        element.
+      </p>
+
+      <p class="paragraph-before-code">
+        Here is an example of using the fromTo() method to animate an element:
+      </p>
+
+      <pre><code class="language-js">gsap.fromTo("#myElement", {
+  x: -100, 
+  y: -100
+}, 
+{
+  duration: 1, 
+  x: 100, 
+  y: 100
+})</code></pre>
+
+      <p>
+        In this example, the fromTo() method is used to animate the element with
+        the ID "myElement". The starting animation properties are specified in
+        the first object passed to the fromTo() method. The final animation
+        properties are specified in the second object passed to the fromTo()
+        method.
+      </p>
+
+      <h2>GSAP Timelines</h2>
+      <p>
+        In addition to animating individual elements, GSAP also provides a
+        powerful feature called timelines.
+        <span class="bold">
+          Timelines allow you to animate multiple elements in sequence or
+          simultaneously,
+        </span>
+        creating complex animations with ease.
+      </p>
+
+      <p>
+        A timeline is essentially a container for animations. You can add
+        animations to a timeline using the to(), from(), fromTo(), or timeline()
+        methods.
+      </p>
+
+      <p class="paragraph-before-code">
+        Here is an example of creating a timeline with three animations:
+      </p>
+
+      <pre><code class="language-js">// Create a timeline
+const tl = gsap.timeline();
+  
+// Add animations to the timeline
+tl.to("#myElement1", {duration: 1, x: 100})
+tl.to("#myElement2", {duration: 1, y: 100}, "&lt;")
+tl.to("#myElement3", {duration: 1, x: 100, y: 100}, "&lt; 0.5")</code></pre>
+
+      <p>
+        In this example, three animations are added to the timeline. The first
+        animation moves the element with the ID "myElement1" to the right by 100
+        pixels over a duration of 1 second. The second animation moves the
+        element with the ID "myElement2" down by 100 pixels over a duration of 1
+        second. The third animation moves the element with the ID "myElement3"
+        to the right and down by 100 pixels over a duration of 1 second.
+      </p>
+      <p>
+        The second and third animations use the special characters to specify
+        the position of the animation in the timeline. The "&lt;" character
+        specifies that the animation should start at the same time as the
+        previous animation. The "&lt; 0.5" character specifies that the
+        animation should start 0.5 seconds after the previous animation.
+      </p>
+      <p class="paragraph-before-divider">
+        Timelines are a powerful feature of GSAP that can be used to create
+        complex animations with ease. By combining timelines with the basic
+        animation methods, you can create engaging and dynamic animations for
+        your web projects.
+      </p>
+
+      <div class="line-divider"></div>
+
+      <h1>Advanced Animation</h1>
+      <h2>ScrollTrigger</h2>
+      <p>
+        GSAP's ScrollTrigger is a powerful plugin that allows you to create
+        scroll-based animations with ease. With ScrollTrigger, you can animate
+        anything from simple fade in animations to full page scrolling effects.
+      </p>
+      <h2>ScrollTrigger Fade In Example</h2>
+
+      <p class="paragraph-before-code">
+        Here is an example of using ScrollTrigger to create a fade-in animation:
+      </p>
+
+      <pre><code class="language-js">gsap.from("#myElement", {
+  duration: 1,
+  opacity: 1,
+  ease: "power1.out",
+  scrollTrigger: {
+    trigger: "#myElement",
+    start: "top 20%",
+  },
+});</code></pre>
+
+      <p>
+        In this example, the scrollTrigger object is used to specify that the
+        trigger for the animation is the myElement element and it should start
+        when the top of the element reaches 20% of the viewport from the top of
+        the screen.
+      </p>
+      <h2>Scrub and Pin</h2>
+      <p>
+        ScrollTrigger also provides a feature called scrubbing and pinning.
+        <span class="bold">
+          Scrubbing allows you to animate an element based on the scroll
+          position, while pinning keeps the element fixed in place as the user
+          scrolls.
+        </span>
+        These two options can be used independently from each other.
+      </p>
+      <p class="paragraph-before-code">
+        Here is an example of a scrollTrigger animation that uses scrub and pin
+      </p>
+
+      <pre><code class="language-js">gsap.to("#myElement", {
+  duration: 1,
+  x: 500,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#myElement",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true,
+    pin: true,
+  },
+})</code></pre>
+
+      <p>
+        In this example, the #myElement element is animated horizontally based
+        on the scroll position. The value of "top top" for the start property
+        tells scrollTrigger to start the animation when the top of the element
+        reaches the top of the viewport. Similarly, the end properties' value
+        tells scrollTrigger to end the animation when the bottom of the
+        myElement element reaches the bottom of the viewport.
+      </p>
+
+      <h1>Other JavaScript Libraries Used</h1>
+      <h2>Lenis</h2>
+      <p class="paragraph-before-code">
+        Lenis is a JavaScript library by Darkroom Engineering that makes
+        scrolling on webpages smooth. Most of the code is plug-and-play, so
+        there is not much customization available. You can use Lenis via CDN
+        link, similar to GSAP. If you would like to use Lenis, follow the simple
+        guide below.
+      </p>
+
+      <pre><code class="language-xml">&lt;!-- Put this in your page's head --&gt;
+&lt;script src="https://unpkg.com/@studio-freight/lenis@1.0.40/dist/lenis.min.js"&gt;&lt;/script&gt;</code></pre>
+
+      <p>
+        Then, put this code in your JavaScript, inside the isReduced if
+        statement
+      </p>
+
+      <pre><code class="language-js">const lenis = new Lenis({
+    duration:1,// How long it takes to catch up with the actual scroll position, default 1
+    wheelMultiplier: 1,// Makes the user scroll faster, default 1
+});
+
+lenis.on('scroll', (e) => {
+//   console.log(e) // Shows information about the current scrolling state
+});
+
+lenis.on('scroll', ScrollTrigger.update);
+
+gsap.ticker.add((time)=>{
+lenis.raf(time * 1000)
+});</code></pre>
+
+      <p>Finally, put this code in your CSS file.</p>
+
+      <pre><code class="language-css">html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}</code></pre>
+
+      <h2>HighlightJS</h2>
+      <p class="paragraph-before-code">
+        HighlightJS is the library responsible for the making the code blocks on
+        this page. It works by wrapping the code you want to display in the HTML
+        elements "pre", which tells the browser to render all of the letters as
+        the same width, and the "code" element. Similar to GSAP and Lenis,
+        HighlightJS can be used via a CDN link. If you would like to use
+        HighlightJS on your website, simply follow the guide below.
+      </p>
+
+      <pre><code class="language-xml">&lt;!-- Put these in your page's head --&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" /&gt;
+</code></pre>
+
+      <p>
+        Next, wrap your code in pre and code elements. (Note: If you are trying
+        to display HTML using HighlightJS you must replace all of the &lt; and
+        &gt; characters with &amp;gt; and &amp;lt; which display as their
+        corresponding symbols when viewed in a web browser)
+      </p>
+
+      <pre><code class="language-xml">&lt;pre&gt;&lt;code&gt;
+    The code you want to display goes here
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+      <p>Then, in your JavaScript file, paste the following code.</p>
+
+      <pre><code class="language-js">hljs.highlightAll()</code></pre>
+      <footer>
+        <svg
+          id="visual"
+          viewBox="0 0 5000 400"
+          width="5000"
+          height="400"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+        >
+          <path
+            class="wave1"
+            d="M0 56L36.2 62C72.3 68 144.7 80 217.2 88.8C289.7 97.7 362.3 103.3 434.8 102.5C507.3 101.7 579.7 94.3 652.2 79.2C724.7 64 797.3 41 869.8 63.7C942.3 86.3 1014.7 154.7 1087 155.7C1159.3 156.7 1231.7 90.3 1304.2 78.8C1376.7 67.3 1449.3 110.7 1521.8 142C1594.3 173.3 1666.7 192.7 1739.2 202.5C1811.7 212.3 1884.3 212.7 1956.8 209.7C2029.3 206.7 2101.7 200.3 2174 175.2C2246.3 150 2318.7 106 2391.2 102.3C2463.7 98.7 2536.3 135.3 2608.8 152.3C2681.3 169.3 2753.7 166.7 2826 171.5C2898.3 176.3 2970.7 188.7 3043.2 171.5C3115.7 154.3 3188.3 107.7 3260.8 109.7C3333.3 111.7 3405.7 162.3 3478.2 162.5C3550.7 162.7 3623.3 112.3 3695.8 88C3768.3 63.7 3840.7 65.3 3913 80.5C3985.3 95.7 4057.7 124.3 4130.2 114.8C4202.7 105.3 4275.3 57.7 4347.8 72C4420.3 86.3 4492.7 162.7 4565.2 188.3C4637.7 214 4710.3 189 4782.8 185.3C4855.3 181.7 4927.7 199.3 4963.8 208.2L5000 217L5000 401L4963.8 401C4927.7 401 4855.3 401 4782.8 401C4710.3 401 4637.7 401 4565.2 401C4492.7 401 4420.3 401 4347.8 401C4275.3 401 4202.7 401 4130.2 401C4057.7 401 3985.3 401 3913 401C3840.7 401 3768.3 401 3695.8 401C3623.3 401 3550.7 401 3478.2 401C3405.7 401 3333.3 401 3260.8 401C3188.3 401 3115.7 401 3043.2 401C2970.7 401 2898.3 401 2826 401C2753.7 401 2681.3 401 2608.8 401C2536.3 401 2463.7 401 2391.2 401C2318.7 401 2246.3 401 2174 401C2101.7 401 2029.3 401 1956.8 401C1884.3 401 1811.7 401 1739.2 401C1666.7 401 1594.3 401 1521.8 401C1449.3 401 1376.7 401 1304.2 401C1231.7 401 1159.3 401 1087 401C1014.7 401 942.3 401 869.8 401C797.3 401 724.7 401 652.2 401C579.7 401 507.3 401 434.8 401C362.3 401 289.7 401 217.2 401C144.7 401 72.3 401 36.2 401L0 401Z"
+            fill="#fa7268"
+          ></path>
+          <path
+            class="wave2"
+            d="M0 80L36.2 79.8C72.3 79.7 144.7 79.3 217.2 94.7C289.7 110 362.3 141 434.8 153.8C507.3 166.7 579.7 161.3 652.2 172.7C724.7 184 797.3 212 869.8 201C942.3 190 1014.7 140 1087 120C1159.3 100 1231.7 110 1304.2 114.7C1376.7 119.3 1449.3 118.7 1521.8 125.3C1594.3 132 1666.7 146 1739.2 138.3C1811.7 130.7 1884.3 101.3 1956.8 91.7C2029.3 82 2101.7 92 2174 123.8C2246.3 155.7 2318.7 209.3 2391.2 236.5C2463.7 263.7 2536.3 264.3 2608.8 259.3C2681.3 254.3 2753.7 243.7 2826 231.3C2898.3 219 2970.7 205 3043.2 177.7C3115.7 150.3 3188.3 109.7 3260.8 112C3333.3 114.3 3405.7 159.7 3478.2 169C3550.7 178.3 3623.3 151.7 3695.8 130.8C3768.3 110 3840.7 95 3913 100C3985.3 105 4057.7 130 4130.2 130.3C4202.7 130.7 4275.3 106.3 4347.8 126.2C4420.3 146 4492.7 210 4565.2 208.8C4637.7 207.7 4710.3 141.3 4782.8 141.8C4855.3 142.3 4927.7 209.7 4963.8 243.3L5000 277L5000 401L4963.8 401C4927.7 401 4855.3 401 4782.8 401C4710.3 401 4637.7 401 4565.2 401C4492.7 401 4420.3 401 4347.8 401C4275.3 401 4202.7 401 4130.2 401C4057.7 401 3985.3 401 3913 401C3840.7 401 3768.3 401 3695.8 401C3623.3 401 3550.7 401 3478.2 401C3405.7 401 3333.3 401 3260.8 401C3188.3 401 3115.7 401 3043.2 401C2970.7 401 2898.3 401 2826 401C2753.7 401 2681.3 401 2608.8 401C2536.3 401 2463.7 401 2391.2 401C2318.7 401 2246.3 401 2174 401C2101.7 401 2029.3 401 1956.8 401C1884.3 401 1811.7 401 1739.2 401C1666.7 401 1594.3 401 1521.8 401C1449.3 401 1376.7 401 1304.2 401C1231.7 401 1159.3 401 1087 401C1014.7 401 942.3 401 869.8 401C797.3 401 724.7 401 652.2 401C579.7 401 507.3 401 434.8 401C362.3 401 289.7 401 217.2 401C144.7 401 72.3 401 36.2 401L0 401Z"
+            fill="#ef5f67"
+          ></path>
+          <path
+            class="wave3"
+            d="M0 307L36.2 283.2C72.3 259.3 144.7 211.7 217.2 200.5C289.7 189.3 362.3 214.7 434.8 238.5C507.3 262.3 579.7 284.7 652.2 296.5C724.7 308.3 797.3 309.7 869.8 291.8C942.3 274 1014.7 237 1087 229.3C1159.3 221.7 1231.7 243.3 1304.2 243.5C1376.7 243.7 1449.3 222.3 1521.8 200.8C1594.3 179.3 1666.7 157.7 1739.2 164.2C1811.7 170.7 1884.3 205.3 1956.8 226.5C2029.3 247.7 2101.7 255.3 2174 259.2C2246.3 263 2318.7 263 2391.2 253.8C2463.7 244.7 2536.3 226.3 2608.8 224.2C2681.3 222 2753.7 236 2826 228.7C2898.3 221.3 2970.7 192.7 3043.2 186.2C3115.7 179.7 3188.3 195.3 3260.8 197.5C3333.3 199.7 3405.7 188.3 3478.2 193.3C3550.7 198.3 3623.3 219.7 3695.8 235C3768.3 250.3 3840.7 259.7 3913 256.8C3985.3 254 4057.7 239 4130.2 246.3C4202.7 253.7 4275.3 283.3 4347.8 277.2C4420.3 271 4492.7 229 4565.2 227.2C4637.7 225.3 4710.3 263.7 4782.8 262.3C4855.3 261 4927.7 220 4963.8 199.5L5000 179L5000 401L4963.8 401C4927.7 401 4855.3 401 4782.8 401C4710.3 401 4637.7 401 4565.2 401C4492.7 401 4420.3 401 4347.8 401C4275.3 401 4202.7 401 4130.2 401C4057.7 401 3985.3 401 3913 401C3840.7 401 3768.3 401 3695.8 401C3623.3 401 3550.7 401 3478.2 401C3405.7 401 3333.3 401 3260.8 401C3188.3 401 3115.7 401 3043.2 401C2970.7 401 2898.3 401 2826 401C2753.7 401 2681.3 401 2608.8 401C2536.3 401 2463.7 401 2391.2 401C2318.7 401 2246.3 401 2174 401C2101.7 401 2029.3 401 1956.8 401C1884.3 401 1811.7 401 1739.2 401C1666.7 401 1594.3 401 1521.8 401C1449.3 401 1376.7 401 1304.2 401C1231.7 401 1159.3 401 1087 401C1014.7 401 942.3 401 869.8 401C797.3 401 724.7 401 652.2 401C579.7 401 507.3 401 434.8 401C362.3 401 289.7 401 217.2 401C144.7 401 72.3 401 36.2 401L0 401Z"
+            fill="#e34c67"
+          ></path>
+          <path
+            class="wave4"
+            d="M0 299L36.2 305.8C72.3 312.7 144.7 326.3 217.2 312C289.7 297.7 362.3 255.3 434.8 241.5C507.3 227.7 579.7 242.3 652.2 244.5C724.7 246.7 797.3 236.3 869.8 240.5C942.3 244.7 1014.7 263.3 1087 259.8C1159.3 256.3 1231.7 230.7 1304.2 236.7C1376.7 242.7 1449.3 280.3 1521.8 297.7C1594.3 315 1666.7 312 1739.2 310.7C1811.7 309.3 1884.3 309.7 1956.8 297.5C2029.3 285.3 2101.7 260.7 2174 255C2246.3 249.3 2318.7 262.7 2391.2 260.2C2463.7 257.7 2536.3 239.3 2608.8 234.7C2681.3 230 2753.7 239 2826 244.3C2898.3 249.7 2970.7 251.3 3043.2 260.5C3115.7 269.7 3188.3 286.3 3260.8 281C3333.3 275.7 3405.7 248.3 3478.2 243.8C3550.7 239.3 3623.3 257.7 3695.8 258.5C3768.3 259.3 3840.7 242.7 3913 229.8C3985.3 217 4057.7 208 4130.2 210.7C4202.7 213.3 4275.3 227.7 4347.8 231C4420.3 234.3 4492.7 226.7 4565.2 220.7C4637.7 214.7 4710.3 210.3 4782.8 229.3C4855.3 248.3 4927.7 290.7 4963.8 311.8L5000 333L5000 401L4963.8 401C4927.7 401 4855.3 401 4782.8 401C4710.3 401 4637.7 401 4565.2 401C4492.7 401 4420.3 401 4347.8 401C4275.3 401 4202.7 401 4130.2 401C4057.7 401 3985.3 401 3913 401C3840.7 401 3768.3 401 3695.8 401C3623.3 401 3550.7 401 3478.2 401C3405.7 401 3333.3 401 3260.8 401C3188.3 401 3115.7 401 3043.2 401C2970.7 401 2898.3 401 2826 401C2753.7 401 2681.3 401 2608.8 401C2536.3 401 2463.7 401 2391.2 401C2318.7 401 2246.3 401 2174 401C2101.7 401 2029.3 401 1956.8 401C1884.3 401 1811.7 401 1739.2 401C1666.7 401 1594.3 401 1521.8 401C1449.3 401 1376.7 401 1304.2 401C1231.7 401 1159.3 401 1087 401C1014.7 401 942.3 401 869.8 401C797.3 401 724.7 401 652.2 401C579.7 401 507.3 401 434.8 401C362.3 401 289.7 401 217.2 401C144.7 401 72.3 401 36.2 401L0 401Z"
+            fill="#d53867"
+          ></path>
+          <path
+            class="wave5"
+            d="M0 304L36.2 298C72.3 292 144.7 280 217.2 287.3C289.7 294.7 362.3 321.3 434.8 326C507.3 330.7 579.7 313.3 652.2 318C724.7 322.7 797.3 349.3 869.8 357.3C942.3 365.3 1014.7 354.7 1087 356.3C1159.3 358 1231.7 372 1304.2 359.2C1376.7 346.3 1449.3 306.7 1521.8 295.2C1594.3 283.7 1666.7 300.3 1739.2 316.2C1811.7 332 1884.3 347 1956.8 358.2C2029.3 369.3 2101.7 376.7 2174 361.7C2246.3 346.7 2318.7 309.3 2391.2 294.2C2463.7 279 2536.3 286 2608.8 299.7C2681.3 313.3 2753.7 333.7 2826 338.8C2898.3 344 2970.7 334 3043.2 332.7C3115.7 331.3 3188.3 338.7 3260.8 342.8C3333.3 347 3405.7 348 3478.2 356.3C3550.7 364.7 3623.3 380.3 3695.8 370.3C3768.3 360.3 3840.7 324.7 3913 308.5C3985.3 292.3 4057.7 295.7 4130.2 304.7C4202.7 313.7 4275.3 328.3 4347.8 341.7C4420.3 355 4492.7 367 4565.2 368C4637.7 369 4710.3 359 4782.8 348.7C4855.3 338.3 4927.7 327.7 4963.8 322.3L5000 317L5000 401L4963.8 401C4927.7 401 4855.3 401 4782.8 401C4710.3 401 4637.7 401 4565.2 401C4492.7 401 4420.3 401 4347.8 401C4275.3 401 4202.7 401 4130.2 401C4057.7 401 3985.3 401 3913 401C3840.7 401 3768.3 401 3695.8 401C3623.3 401 3550.7 401 3478.2 401C3405.7 401 3333.3 401 3260.8 401C3188.3 401 3115.7 401 3043.2 401C2970.7 401 2898.3 401 2826 401C2753.7 401 2681.3 401 2608.8 401C2536.3 401 2463.7 401 2391.2 401C2318.7 401 2246.3 401 2174 401C2101.7 401 2029.3 401 1956.8 401C1884.3 401 1811.7 401 1739.2 401C1666.7 401 1594.3 401 1521.8 401C1449.3 401 1376.7 401 1304.2 401C1231.7 401 1159.3 401 1087 401C1014.7 401 942.3 401 869.8 401C797.3 401 724.7 401 652.2 401C579.7 401 507.3 401 434.8 401C362.3 401 289.7 401 217.2 401C144.7 401 72.3 401 36.2 401L0 401Z"
+            fill="#c62368"
+          ></path>
+        </svg>
+        <div class="footer-content">
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            Back To Top
+          </button>
+          <div class="code-info">
+            <p>Made with ❤️ by human hands | This work is licensed under the GPL-3.0 license</p>
+          </div>
+          <a  href="https://github.com/LucyKaiser/10Portfolio"  target="_blank">
+            View Source Code
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

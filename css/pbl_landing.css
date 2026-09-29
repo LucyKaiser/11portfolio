@@ -1,0 +1,68 @@
+.grainy-background {
+  background-image: url("../img/plb_landing.svg");
+  filter: saturate(60%);
+}
+nav {
+  /* padding-top: 5px !important; */
+  margin-top: -5px !important;
+}
+.grainy-background {
+  padding-top: 13.5px;
+}
+.growth-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.projects-img {
+  width: 800px;
+  height: auto;
+}
+.growth-hero {
+  max-width: 800px;
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-top: 128px;
+    margin-bottom: 24px;
+  }
+  p {
+    margin-bottom: 128px;
+  }
+}
+.growth-hero-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.artifacts-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+}
+.artifacts {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+}
+.artifacts > p {
+  max-width: 400px;
+}
+.artifacts-description {
+  display: flex;
+  align-items: center;
+  width: fit-content !important;
+  justify-content: center;
+  flex-direction: column;
+}
+.artifact-description {
+  width: 400px;
+  margin-top: 24px;
+}
+.projects-img {
+  box-shadow: 0px 0px 59px -9px rgba(0, 0, 0, 0.75);
+  margin-top: 12px;
+}

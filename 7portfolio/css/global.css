@@ -1,0 +1,788 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital@1&family=Raleway:wght@700&display=swap");
+/* I can now correctly style elements to be visually pleasing */
+/* I now know how to center an element in multiple different ways */
+/* I now understand how to use margin and padding */
+:root {
+  /*This css repeats itself sooooo much but im too lazy to fix it so have ~900 lines of unorganized css*/
+  /*learned from https://www.w3schools.com/css/css3_variables.asp */
+  --peach: #fa9a85;
+  --dullpeach45: #e0ab9f;
+  --dullpeach65: #d4b2ab;
+  --dullpeach80: #cbb8b4;
+  --grey: #414141;
+  --darkgrey: #313131;
+  --orangeyellow: #fed700;
+  --textwhite: #f0f8ff;
+  --darktextwite: #b4babf;
+  --babyblue: #85e5fa;
+  --lightergrey: #363636;
+  --blue: #0047ba;
+  --green: #007d69;
+  --yellow: #f7d117;
+  --red: #e71e39;
+  --dimgrey: #696969; /*lmao nice*/
+  --footerpink: #fa7268;
+}
+@font-face {
+  font-family: "openDyslexic";
+  src: url("../fonts/OpenDyslexic-Regular.otf");
+}
+@font-face {
+  font-family: "openDyslexicBold";
+  src: url("../fonts/OpenDyslexic-Bold.otf");
+}
+@font-face {
+  font-family: "openDyslexicBoldItalic";
+  src: url("../fonts/OpenDyslexic-BoldItalic.otf");
+}
+@font-face {
+  font-family: "openDyslexicItalic";
+  src: url("../fonts/OpenDyslexic-Italic.otf");
+}
+* {
+  /*The everything selector*/
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 1px transparent; /*Stops text from being displated with jagged lines from here https://www.uxbooth.com/articles/4-tips-and-tricks-for-more-legible-content/*/
+  /* Hide scrollbar for IE, Edge and Firefox */
+  /* from here https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  cursor: default;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+/* from here https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex; /*to center align it */
+  justify-content: space-around; /* for some reason this centers it idk at this point */
+  align-items: center; /*center aligns the items */
+  background-color: var(--grey);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#navbar {
+  list-style: none; /*no bullet points*/
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-link {
+  padding: 10px 15px;
+  text-decoration: none;
+  /*notextstyling*/
+  font-weight: bold;
+  transition: all 0.2s;
+  text-align: center;
+  font-size: 30px;
+  color: var(--dullpeach80);
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.nav-link:hover {
+  /*styling for when it is hovered*/
+  background-color: var(--peach);
+  color: var(--grey);
+  border-radius: 3px;
+}
+
+body {
+  background-color: var(--darkgrey);
+  background-image: url(../img/grid.svg);
+  background-size: auto 50vw;
+  overflow-x: hidden;
+}
+
+.Lucy {
+  font-size: 5vw;
+  color: var(--orangeyellow);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.Lucykaiser {
+  font-weight: bold;
+  float: left;
+  color: rgb(240, 248, 255);
+  margin: 75px 75px 0px 75px;
+  width: 80%;
+}
+.intro {
+  margin-left: 75px;
+  margin-top: 10px;
+  float: left;
+  position: relative;
+  font-weight: bold;
+  float: left;
+  color: var(--textwhite);
+  width: 420px; /*Thats epic dude */
+  font-size: 19px;
+  line-height: 27px;
+}
+.mynameis {
+  font-size: 15px;
+}
+.hello {
+  font-size: 15px;
+}
+::selection {
+  color: var(--peach);
+  background: var(--peach);
+}
+.me {
+  width: auto;
+  height: 500px;
+  z-index: 0;
+  margin-left: 200px;
+  margin-top: -50px;
+  filter: brightness(140%);
+  -webkit-filter: brightness(140%);
+}
+.qualities {
+  top: 100vh;
+  background-color: var(--lightergrey);
+  width: 100%;
+  padding-bottom: 100px;
+  z-index: 100;
+}
+
+.quality1,
+.quality2,
+.quality3,
+.quality4,
+.quality5 {
+  background-color: var(--dimgrey);
+  margin: 100px 200px 100px 200px;
+  width: auto;
+  height: 650px;
+  padding: 50px 50px 0px 50px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  z-index: 99;
+}
+
+.quality1-img,
+.quality3-img,
+.quality5-img {
+  float: left;
+  width: 30vw;
+  height: 30vw;
+  margin-top: 20px;
+}
+
+.quality2-img,
+.quality4-img {
+  float: right;
+  width: 30vw;
+  height: 30vw;
+  margin-top: 20px;
+}
+
+.quality1-text,
+.quality3-text,
+.quality5-text {
+  float: right;
+  color: var(--textwhite);
+  width: 19vw;
+  height: auto;
+  font-size: 2vw;
+  margin-top: 10vh;
+}
+.quality2-text,
+.quality4-text {
+  float: left;
+  color: var(--textwhite);
+  width: 19vw;
+  height: auto;
+  font-size: 2vw;
+  margin-top: 10vh;
+}
+
+.quality1-name,
+.quality2-name,
+.quality3-name,
+.quality4-name,
+.quality5-name {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 75px;
+  color: var(--textwhite);
+  z-index: 99;
+}
+
+.thefivequalities {
+  color: var(--textwhite);
+  text-align: center;
+  font-size: 100px;
+  padding-top: 50px;
+  margin-bottom: -25px;
+  z-index: 100;
+}
+
+.Lucy,
+.hello,
+.mynameis {
+  display: inline-block;
+}
+
+.blue {
+  color: var(--blue);
+  display: inline-block;
+  margin-right: -4px;
+}
+.yellow {
+  color: var(--yellow);
+  display: inline-block;
+  margin-right: -4px;
+}
+.green {
+  color: var(--green);
+  display: inline-block;
+  margin-right: -4px;
+}
+.red {
+  color: var(--red);
+  display: inline-block;
+  margin-right: -4px;
+}
+.quality1-text {
+  margin-top: 17vh;
+}
+.peach {
+  color: var(--orangeyellow);
+  cursor: pointer;
+}
+/* from here https://codepen.io/rdallaire/pen/neMvbX*/
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgb(73, 73, 73);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 1000000;
+  -webkit-transition: all 0.4s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 10000000;
+}
+#return-to-top:hover {
+  background: #21b0fe;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+#top {
+  position: absolute;
+}
+.char {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.underline {
+  padding: 10px 15px;
+  text-decoration: underline; /*no text styling*/
+  font-weight: bold;
+  transition: all 0.2s;
+  text-align: center;
+  font-size: 30px;
+  color: var(--peach);
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.underline:hover {
+  background-color: var(--peach);
+  color: var(--grey);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+/* font change button from here bit.ly/3ZszCkF*/
+.raleway {
+  font-family: raleway;
+}
+.openDyslexic {
+  font-family: openDyslexic;
+}
+/* from here https://getcssscan.com/css-buttons-examples  */
+#change-font {
+  background-color: var(--dimgrey);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: raleway;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  -webkit-transition: color 100ms;
+  -moz-transition: color 100ms;
+  -ms-transition: color 100ms;
+  -o-transition: color 100ms;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#change-font:hover,
+#change-font:focus {
+  background-color: var(--lightergrey);
+}
+table {
+  border: 1px solid var(--dimgrey);
+  border-collapse: collapse;
+  padding: 5px;
+  margin: 50px auto 50px auto;
+  width: 90vw;
+}
+table th {
+  border: 1px solid var(--dimgrey);
+  padding: 5px;
+  background: var(--lightergrey);
+  color: var(--textwhite);
+}
+table td {
+  border: 1px solid var(--dimgrey);
+  text-align: center;
+  padding: 5px;
+  background: var(--grey);
+  color: #f0f8ff;
+}
+.after {
+  float: right;
+}
+.codetext {
+  margin: 30px;
+  font-size: 50px;
+  color: var(--textwhite);
+  display: flex;
+  justify-content: center;
+}
+
+.whatsthat a {
+  color: var(--footerpink);
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.codingtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: var(--textwhite);
+  margin-top: 10px;
+  margin-bottom: -30px;
+}
+.eintro,
+.interests,
+.activities {
+  color: var(--textwhite);
+}
+.footer {
+  position: relative;
+  width: 100%;
+  /* background: #3586ff; */
+  min-height: 100px;
+  /* padding: 20px 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.wave {
+  position: absolute;
+  /* top: 4050px; */
+  left: 0;
+  height: 100px;
+  overflow: hidden;
+}
+.wave#wave1 {
+  z-index: 996;
+  background-image: url(../img/waves/wave-1.svg);
+  width: 4000px;
+  height: 500px;
+  position: absolute;
+  margin-top: -580px;
+}
+
+.wave#wave2 {
+  z-index: 997;
+  background-image: url(../img/waves/wave-2.svg);
+  width: 4000px;
+  height: 500px;
+  position: absolute;
+  margin-top: -580px;
+}
+
+.wave#wave3 {
+  z-index: 998;
+  background-image: url(../img/waves/wave-3.svg);
+  width: 4000px;
+  height: 500px;
+  position: absolute;
+  margin-top: -580px;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  background-image: url(../img/waves/wave-4.svg);
+  width: 4000px;
+  height: 500px;
+  position: absolute;
+  margin-top: -580px;
+}
+.wave#wave5 {
+  z-index: 1000;
+  background-image: url(../img/waves/wave-5.svg);
+  width: 4000px;
+  height: 500px;
+  position: absolute;
+  margin-top: -580px;
+}
+.footercontent {
+  height: 170px;
+  background-color: var(--footerpink);
+  position: absolute;
+  width: 100%;
+  /* top: 4550px; */
+  z-index: 10000;
+  text-align: center;
+}
+.footer-links > a {
+  text-decoration: none;
+  color: var(--darkgrey);
+  cursor: pointer;
+}
+.footer-links {
+  font-size: 30px;
+}
+.copy {
+  margin-top: 5px;
+  color: var(--darkgrey);
+}
+.copy-link,
+.source-code,
+.puzzle {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--darkgrey);
+}
+.riddlediv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+}
+.puzzledisc {
+  color: var(--darktextwite);
+  position: absolute;
+  bottom: 0px;
+}
+.riddleclue {
+  color: var(--textwhite);
+}
+.six-portfolio-img {
+  width: 50vw;
+  height: auto;
+}
+.seven-portfolio-img {
+  width: 50vw;
+  height: auto;
+}
+
+.projects-img {
+  width: 50vw;
+  height: auto;
+  float: right;
+}
+.pbl-paragraph {
+  color: var(--textwhite);
+  padding: 10px;
+}
+.projects-header {
+  color: var(--textwhite);
+  text-align: center;
+  font-size: 50px;
+  margin: 25px;
+}
+.whats-pbl-header,
+.pbl-in-stem-header,
+.whats-pbl,
+.pbl-in-stem {
+  color: var(--textwhite);
+  text-align: center;
+}
+.whats-pbl-header,
+.pbl-in-stem-header {
+  margin-bottom: 10px;
+}
+.whats-pbl-div,
+.pbl-in-stem-div {
+  width: 50vw;
+  margin: 0px;
+  float: left;
+}
+.whats-pbl,
+.pbl-in-stem {
+  height: 116px;
+}
+.pbl-img-caption {
+  color: var(--textwhite);
+  line-height: 477.66px;
+}
+.pbl-img-caption-div {
+  text-align: center;
+  height: 477.66px;
+  width: 640px;
+}
+/*from here:  https://codepen.io/jltk/pen/dMvGvG*/
+.effect-one > a {
+  position: relative;
+  cursor: pointer;
+}
+.effect-one > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  margin: -5px 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+}
+.effect-one > a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+.effect-one {
+  display: inline-block;
+}
+.project-links {
+  text-align: center;
+  margin: 200px 40vw 50px 40vw;
+  line-height: 28px;
+}
+.project-link:link {
+  color: var(--peach);
+}
+.project-link:visited {
+  color: var(--peach);
+}
+.project-link:hover {
+  color: var(--footerpink);
+}
+.project-link {
+  text-decoration: none;
+}
+.growth-text {
+  color: var(--textwhite);
+  margin: 30px;
+}
+.growth-header {
+  color: var(--textwhite);
+  text-align: center;
+  margin: 25px;
+  font-size: 40px;
+}
+.six-growth-img-caption,
+.seven-growth-img-caption {
+  color: var(--textwhite);
+  text-align: center;
+}
+.six-img-and-text {
+  float: left;
+}
+.seven-img-and-text {
+  float: right;
+}
+.yellowtext {
+  color: var(--orangeyellow);
+  cursor: pointer;
+}
+.experiences-text > p {
+  font-size: 31px;
+  line-height: 3.2rem;
+  /* text-align: justify; */
+  color: var(--darktextwite);
+}
+.experiences-text {
+  padding: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.openDyslexicBold {
+  font-family: openDyslexicBold;
+}
+.mecolor {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  top: 150px;
+  left: 850px;
+  display: none;
+}
+.minecraft {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 120px;
+  left: 550px;
+  display: none;
+}
+.besiege {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 120px;
+  left: 700px;
+  display: none;
+}
+.ksp {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 120px;
+  left: 850px;
+  display: none;
+}
+.photography {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 100px;
+  left: 440px;
+  display: none;
+}
+.friends {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 330px;
+  left: 520px;
+  display: none;
+}
+.vr {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 280px;
+  left: 850px;
+  display: none;
+}
+.swimming {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: 150px;
+  left: 570px;
+  display: none;
+}
+/* from here https://stackoverflow.com/questions/27809922/in-html-how-can-you-make-an-image-appear-while-you-are-hovering-over-text#:~:text=To%20show%20an%20image%20when%20you%20hover%20over,%7B%20%2F%2Fimage%20is%20a%20child%20display%3A%20block%3B%20%7D */
+span.eben:hover + img.mecolor {
+  display: block;
+}
+span.emc:hover + img.minecraft {
+  display: block;
+}
+span.ebes:hover + img.besiege {
+  display: block;
+}
+span.eksp:hover + img.ksp {
+  display: block;
+}
+span.ephoto:hover + img.photography {
+  display: block;
+}
+span.efriends:hover + img.friends {
+  display: block;
+}
+span.evr:hover + img.vr {
+  display: block;
+}
+span.eswim:hover + img.swimming {
+  display: block;
+}

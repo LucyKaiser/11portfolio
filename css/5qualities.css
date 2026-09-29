@@ -1,0 +1,121 @@
+.scroll-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.scroll-wrapper-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* background-image: url(../img/5qualitybg.svg); */
+  height: 100vh !important; /* Override other height properties */
+}
+
+body {
+  background-image: url(../img/5qualitybg.svg);
+}
+
+.scroll-box-element {
+  display: flex;
+  justify-content: space-around;
+  width: 550px;
+  margin: 100px;
+  height: 300px;
+  padding: 25px;
+  flex-direction: row;
+  border-radius: 16px;
+  z-index: 3;
+  -webkit-backdrop-filter: brightness(75%) saturate(175%);
+  backdrop-filter: brightness(75%) saturate(175%);
+}
+
+.spacer {
+  height: 100px;
+  background-color: #97d1e2;
+}
+
+.scroll-text-header {
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+  margin-top: 15px;
+  width: 250px;
+  text-align: center;
+  height: 1em;
+}
+
+.scroll-box-description {
+  color: white;
+  margin: 8px;
+  width: 200px;
+  align-self: center;
+  font-size: 12px;
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.five-qualities {
+  font-weight: 800;
+}
+
+.header-text-font {
+  font-family: "scale-variable", sans-serif;
+  font-variation-settings: "wght" 200, "wdth" 50;
+  font-size: 45px;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (prefers-reduced-motion) {
+  .scroll-wrapper {
+    flex-direction: column;
+  }
+  .scroll-wrapper-wrapper {
+    flex-direction: column;
+  }
+  body {
+    height: 100%;
+  }
+  html {
+    height: 100%;
+  }
+  .scroll-box-element {
+    margin: 25px;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .scroll-wrapper {
+    flex-direction: column;
+  }
+  .scroll-wrapper-wrapper {
+    flex-direction: column;
+    background-image: none;
+    height: 100% !important;
+  }
+  body {
+    height: 100%;
+  }
+  html {
+    height: 100%;
+  }
+  .scroll-box-element {
+    margin: 25px;
+  }
+}
+/* If prefers reduced motion is true: */
+body {
+  background-image: url(../img/5qualitybg.svg);
+}
+@media not screen and (prefers-reduced-motion: reduce) {
+  .scroll-wrapper-wrapper {
+    height: 100%;
+  }
+} /*# sourceMappingURL=5qualities.css.map */

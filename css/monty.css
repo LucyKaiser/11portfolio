@@ -1,0 +1,137 @@
+.dot {
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+body, html {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f4f2e5;
+}
+
+.hideCursor {
+  cursor: none;
+}
+
+p {
+  font-family: Helvetica;
+  text-align: center;
+  line-height: 1.5;
+}
+
+button {
+  background-color: rgba(51, 51, 51, 0.535);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  border-width: 0;
+  color: #fcfcfc;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 8px;
+}
+
+.clearButton {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  align-items: center;
+  background-color: #FFE7E7;
+  background-position: 0 0;
+  border: 1px solid #FEE0E0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #D33A2C;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.clearButton:active,
+.clearButton:hover,
+.clearButton:focus {
+  outline: 0;
+}
+
+.clearButton:hover {
+  background-color: #FFE3E3;
+  border-color: #FAA4A4;
+}
+
+.clearButton:active:hover,
+.clearButton:focus:hover,
+.clearButton:focus {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+#dotCounter {
+  position: absolute;
+  left: 16px;
+  top: 32px;
+}
+
+#scoreCounter {
+  position: absolute;
+  left: 16px;
+  top: 64px;
+}
+
+#highScoreCounter {
+  position: absolute;
+  left: 16px;
+  top: 96px;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.button-wrapper {
+  width: 500px;
+}
+
+.start-buttons {
+  justify-content: center;
+  display: flex;
+}/*# sourceMappingURL=monty.css.map */

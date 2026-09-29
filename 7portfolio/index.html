@@ -1,0 +1,175 @@
+<!doctype html>
+<!-- I can now make a website with positioning and images -->
+<!-- I can now properly use divs to style content -->
+<!-- I now know how to make and style a navbars -->
+<html lang="en">
+  <head>
+    <title>Lucy Kaiser's Homepage</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <script src="main.js" defer></script>
+    <title>Lucy Kaiser's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Portfolio: artifacts, success, growth and challenge as a student at DRSS" />
+    <meta name="keywords" content="growth, portfolio, artifacts, reflection" />
+    <meta name="author" content="Lucy Kaiser" />
+    <meta name="copyright" content="2023, Dayton Regional STEM School" />
+    <meta name="rating" content="general" />
+  </head>
+  <body class="raleway" id="changeable" class="home-body">
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+    <link
+      href="///netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet" />
+    <!-- import font awesome arrow icons -->
+    <div id="top"></div>
+
+    <a href="/#top" id="return-to-top"><i class="icon-chevron-up"></i></a>
+    <!-- from here https://codepen.io/rdallaire/pen/neMvbX -->
+
+    <nav>
+      <!--a navbar to give easy access to the pages-->
+      <ul id="navbar">
+        <!--its just a styled ul-->
+        <li>
+          <a href="/index.html" class="underline">Home</a>
+        </li>
+        <li><a href="/projects.html" class="nav-link">Projects</a></li>
+        <li><a href="/experiences.html" class="nav-link">Experiences</a></li>
+        <li><a href="/coding.html" class="nav-link">Coding Progression</a></li>
+      </ul>
+    </nav>
+
+    <div class="Lucykaiser">
+      <div class="hellomynameis">
+        <h1 class="hello">Hello!</h1>
+        <h1 class="mynameis">My Name Is</h1>
+      </div>
+      <div class="gradient">
+        <h1 class="Lucy">Lucy Kaiser.</h1>
+      </div>
+    </div>
+
+    <p class="intro">
+      Welcome to my portfolio! I am a 7th grader at the Dayton Regional STEM
+      School. In this portfolio you will see my experiences, projects, and
+      growth during my time at
+      <span class="blue">S</span>
+      <span class="green">T</span>
+      <span class="yellow">E</span>
+      <span class="red">M</span>
+      .
+    </p>
+
+    <img
+      class="me"
+      src="img/me.png"
+      alt="A picture of me"
+      width="512"
+      height="auto" />
+    <div class="qualities">
+      <h1 class="thefivequalities">The Five Qualities</h1>
+      <div class="quality1">
+        <div class="quailty1-content">
+          <p class="quality1-name">Persistence</p>
+          <img src="img/persistance.png" alt="" class="quality1-img" />
+          <p class="quality1-text">
+            Persistence means not giving up, no matter what the challenge may
+            be.
+          </p>
+        </div>
+      </div>
+
+      <div class="quality2">
+        <div class="quailty2-content">
+          <p class="quality2-name">Communication</p>
+          <img src="img/communication(2).svg" alt="" class="quality2-img" />
+          <p class="quality2-text">
+            The act of continually trying and striving towards a goal despite
+            facing obstacles and setbacks along the way.
+          </p>
+        </div>
+      </div>
+
+      <div class="quality3">
+        <div class="quailty3-content">
+          <p class="quality3-name">Creativity</p>
+          <img src="img/creativity(1).svg" alt="" class="quality3-img" />
+          <p class="quality3-text">
+            Creativity is the skill of taking existing ideas and concepts and
+            transforming them into something new and innovative.
+          </p>
+        </div>
+      </div>
+
+      <div class="quality4">
+        <div class="quailty4-content">
+          <p class="quality4-name">Inquiry</p>
+          <img src="img/inquiry.svg" alt="" class="quality4-img" />
+          <p class="quality4-text">
+            The act of continually trying and striving towards a goal despite
+            facing obstacles and setbacks along the way.
+          </p>
+        </div>
+      </div>
+
+      <div class="quality5">
+        <div class="quailty5-content">
+          <p class="quality5-name">Collaboration</p>
+          <img src="img/collaboration(1).svg" alt="" class="quality5-img" />
+          <p class="quality5-text">
+            Working together as a team to achieve a common goal.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- inspired by this codepen https://codepen.io/alvarotrigo/pen/GRxxWdQ -->
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+        <div class="wave" id="wave5"></div>
+      </div>
+
+      <!-- this code is a mess -->
+      <div class="footercontent">
+        <p class="footer-links">
+          <a href="/#top">Home</a> •<a href="/projects.html"> Projects</a>
+          •
+          <a href="/experiences.html"> Experiences</a>
+          •
+          <a href="/coding.html">Coding Progression</a>
+        </p>
+        <p class="copy">
+          This work is licensed under CC BY-NC 4.0 |
+          <a
+            href="/https://creativecommons.org/licenses/by-nc/4.0/legalcode"
+            target="_blank"
+            class="copy-link">
+            View License
+          </a>
+          |
+          <a
+            href="/https://github.com/LucyKaiser/portfolio"
+            class="source-code"
+            target="_blank"
+            >View Source Code</a
+          >
+        </p>
+        <!-- from here https://stackoverflow.com/questions/32679960/want-to-change-fonts-back-and-forth-using-javascript-button -->
+        <input
+          type="button"
+          id="change-font"
+          value="Change Font to OpenDyslexic (May be buggy)"
+          onclick="changeFont()" />
+      </div>
+    </footer>
+  </body>
+</html>

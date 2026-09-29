@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- <script type="module" src="game.js"></script> -->
+    <script type="module" src="connectionsscript.js" defer></script>
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"></script>
+    <title>Connections</title>
+  </head>
+  <body>
+    <div id="gameWrapper">
+      <h1 id="puzzleTitle">Puzzle Title</h1>
+      <p>by <span id="puzzleAuthor">Puzzle Author</span></p>
+      <div id="gameGrid">
+        <div class="gridCell" id="div1">div1</div>
+        <div class="gridCell" id="div2">div2</div>
+        <div class="gridCell" id="div3">div3</div>
+        <div class="gridCell" id="div4">div4</div>
+        <div class="gridCell" id="div5">div5</div>
+        <div class="gridCell" id="div6">div6</div>
+        <div class="gridCell" id="div7">div7</div>
+        <div class="gridCell" id="div8">div8</div>
+        <div class="gridCell" id="div9">div9</div>
+        <div class="gridCell" id="div10">div10</div>
+        <div class="gridCell" id="div11">div11</div>
+        <div class="gridCell" id="div12">div12</div>
+        <div class="gridCell" id="div13">div13</div>
+        <div class="gridCell" id="div14">div14</div>
+        <div class="gridCell" id="div15">div15</div>
+        <div class="gridCell" id="div16">div16</div>
+        <div id="categoryBlock1" class="categoryBlock">
+          <p id="categoryTitle1" class="categoryTitle">Category title</p>
+          <p id="categoryItems1" class="categoryItems">
+            Item 1, Item 2, Item 3, Item 4
+          </p>
+        </div>
+        <div id="categoryBlock2" class="categoryBlock">
+          <p id="categoryTitle2" class="categoryTitle">Category title</p>
+          <p id="categoryItems2" class="categoryItems">
+            Item 1, Item 2, Item 3, Item 4
+          </p>
+        </div>
+        <div id="categoryBlock3" class="categoryBlock">
+          <p id="categoryTitle3" class="categoryTitle">Category title</p>
+          <p id="categoryItems3" class="categoryItems">
+            Item 1, Item 2, Item 3, Item 4
+          </p>
+        </div>
+        <div id="categoryBlock4" class="categoryBlock">
+          <p id="categoryTitle4" class="categoryTitle">Category title</p>
+          <p id="categoryItems4" class="categoryItems">
+            Item 1, Item 2, Item 3, Item 4
+          </p>
+        </div>
+      </div>
+
+      <div class="submitWrapper">
+        <p>Incorrect: <span id="incorrectCounter">0</span></p>
+        <p id="alert">One away...</p>
+        <div>
+          <button id="clearAll" class="button clickable">Deselect</button>
+          <button id="submitButton" class="button clickable">Submit</button>
+        </div>
+      </div>
+
+      <div id="resultsWrapper">
+        <p id="resultsText"></p>
+        <button id="copyResults" class="button clickable">Copy Results</button>
+        <button
+          id="resetButton"
+          class="button clickable"
+          onclick="location.reload()">
+          Reset Board
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

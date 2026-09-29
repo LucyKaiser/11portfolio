@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for information about the page -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lucy Kaiser" />
+    <meta name="description" content="Lucy Kaiser's 11th Grade Portfolio" />
+    <title>Multi Dot Monty</title>
+
+    <!-- Link Favicon to this page -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+    <!-- Link the monry, global, and navigation CSS files to this file -->
+    <link rel="stylesheet" href="/css/monty.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/navigation.css" />
+
+    <!-- CDN links to GSAP (animation library) core and ScrollTrigger plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Link this page's Javascript file to this file, as well as the global JS file -->
+    <script type="text/javascript" src="js/monty.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+
+    <!-- CDN link for lenis smooth scrolling JS library -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.40/dist/lenis.min.js"></script>
+
+    <!-- CDN links for Stevie Sans, Scale Variable, and Stretch Pro fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/fmf0nsi.css" />
+  </head>
+<main>
+    <body class="ingoreClickEvents">    
+        <p class="hideOnStart ignoreClickEvents">
+                One dot will light up green. <br />
+                Follow it with your eyes, then click on it.<br />
+                Game ends when you lose. <br />
+                This Game if very buggy. <br />
+                If you encounter any bugs, please reload the page.
+            </p>
+            <div class="start-buttons hideOnStart button-wrapper">
+              <button
+                onclick="startRound(2000, 1, 'Easy')"
+                class="hideOnStart ignoreClickEvents">
+                Easy
+              </button>
+              <button
+                onclick="startRound(1000, 0.7, 'Medium')"
+                class="hideOnStart ignoreClickEvents">
+                Medium
+              </button>
+              <button
+                onclick="startRound(250, 0.3, 'Hard')"
+                class="hideOnStart ignoreClickEvents">
+                Hard
+              </button>
+            </div>
+            <button
+              onclick="clearHighScores()"
+              class="clearButton hideOnStart ignoreClickEvents">
+              Clear High scores
+            </button>
+            <p class="warning hideOnStart ignoreClickEvents"></p>
+            <p id="dotCounter"></p>
+            <p id="scoreCounter"></p>
+            <p id="highScoreCounter"></p>
+        </body>
+</main>
+    
+  </body>
+</html>
