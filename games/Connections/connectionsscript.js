@@ -679,7 +679,7 @@ function createElementFromHTML(htmlString) {
 function setPuzzleList() {
   let wrapper = document.getElementById("listWrapper");
   for (let x = 1; x <= Object.keys(puzzleListObject).length; x++) {
-    const templateString = `<a href="/game.html?id=[ID]" class="puzzleLink">[PUZZLENAME] by [PUZZLEAUTHOR] | Difficulty [DIFFICULTY]/5</a>`;
+    const templateString = `<a href="game.html?id=[ID]" class="puzzleLink">[PUZZLENAME] by [PUZZLEAUTHOR] | Difficulty [DIFFICULTY]/5</a>`;
     let constructedString = templateString;
     constructedString = constructedString.replace("[ID]", x);
     constructedString = constructedString.replace(
